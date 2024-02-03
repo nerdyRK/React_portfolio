@@ -20,6 +20,9 @@ function Contact() {
             </label>
             <textarea id="msg" rows={4} />
           </div>
+          <button className="mail-btn" type="submit">
+            Send Mail
+          </button>
         </div>
         <div className="contact-right">
           <ContactCard

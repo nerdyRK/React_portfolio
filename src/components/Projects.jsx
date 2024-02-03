@@ -7,7 +7,7 @@ function Projects() {
     {
       img: wp,
       pname: "WhatsApp Clone Using React",
-      pdesc: "It has the functionality of individual chats also",
+      pdesc: "It has the functionality of individual chats also.",
     },
     {
       img: weather,

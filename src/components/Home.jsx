@@ -15,13 +15,13 @@ function Home() {
         animations.
       </p>
       <div className="social-icons">
-        <a href="">
+        <a href="https://github.com/nerdyRK" target="_blank">
           <TiSocialGithubCircular />
         </a>
-        <a href="">
+        <a href="https://www.linkedin.com/in/ravk/" target="_blank">
           <CiLinkedin />
         </a>
-        <a href="">
+        <a href="" target="_blank">
           <CiFacebook />
         </a>
       </div>

@@ -46,7 +46,7 @@ function About() {
                 <span>Languages </span>: English, Hindi, Punjabi
               </li>
               <li>
-                <span>Address </span>: 121 King Street, Melbourne, Australia
+                <span>Address </span>: Viman Nagar, Pune, IN
               </li>
             </ul>
             <button className="cv-btn">

@@ -203,12 +203,14 @@ nav li a:active {
   width: clamp(300px, 60%, 90%);
 } */
 
-.cv-btn {
+.cv-btn,
+.mail-btn {
   padding: 10px 20px;
   font-size: 1.1rem;
   background-color: #037fff;
   /* margin-top: 10px; */
   cursor: pointer;
+  align-self: start;
 }
 
 .cv-btn a {
@@ -272,26 +274,31 @@ nav li a:active {
 }
 
 .project-list {
-  /* background-color: #7c4f4f; */
   display: flex;
   width: 100%;
   gap: 5%;
-  justify-content: start;
-  padding: 2vh 0;
+  justify-content: center;
+  padding: 4vh 0;
   align-items: center;
   flex-wrap: wrap;
 }
 
 .project-card {
   margin: 2vh 0;
+  min-width: 250px;
+  width: 45%;
+  border: 2px solid aliceblue;
+  /* overflow: hidden; */
   /* background: #614a4a; */
 }
 
 .project-card img {
-  width: 400px;
+  /* width: 45%; */
+  width: 100%;
   height: 250px;
   object-fit: cover;
   position: relative;
+  border-bottom: 2px solid aliceblue;
 }
 
 .project-card img::after {
@@ -307,8 +314,19 @@ nav li a:active {
 }
 
 .project-card .pname {
+  padding: 0 8px;
   font-weight: bold;
   font-size: 1.2rem;
+}
+
+.project-card .para {
+  padding: 0 8px;
+  white-space: nowrap;
+  /* Prevents the text from wrapping to the next line */
+  overflow: hidden;
+  /* Hides any text that overflows the element's box */
+  text-overflow: ellipsis;
+  /* Appends an ellipsis (...) at the end of the overflowing text */
 }
 
 .skill-icons {
@@ -386,6 +404,10 @@ nav li a:active {
   min-height: 95vh;
 }
 
+.contact .heading {
+  margin: 6% 10%;
+}
+
 .contact-label {
   position: absolute;
   top: -4px;
@@ -431,7 +453,9 @@ textarea {
   display: flex;
   width: 50%;
   justify-content: center;
-  align-items: center;
+  align-items: start;
+  margin: 0 auto;
+  margin-left: 2.2rem;
   /* border: 1px solid white; */
   flex-direction: column;
   position: relative;
@@ -558,5 +582,12 @@ textarea {
   .service-card {
     min-width: 90%;
     padding: 16px;
+  }
+
+  .project-card {
+
+    width: 90%;
+    /* overflow: hidden; */
+    background: #5a5a07;
   }
 }
