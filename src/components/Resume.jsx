@@ -45,7 +45,7 @@ function Resume() {
                 className="role"
                 style={{
                   color: "#037fff",
-                  fontSize: "1.3rem",
+                  fontSize: "1.2rem",
                   fontWeight: "bold",
                 }}
               >
@@ -54,7 +54,7 @@ function Resume() {
               <p className="comp">ApixLabs, Pune</p>
               <p
                 className="para"
-                style={{ marginTop: "0px", fontSize: "1rem" }}
+                style={{ marginTop: "0px", fontSize: "0.8rem" }}
               >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Consequuntur, error numquam ullam aperiam maxime aut, velit esse
@@ -70,7 +70,7 @@ function Resume() {
                 className="role"
                 style={{
                   color: "#037fff",
-                  fontSize: "1.3rem",
+                  fontSize: "1.2rem",
                   fontWeight: "bold",
                 }}
               >
@@ -79,7 +79,7 @@ function Resume() {
               <p className="comp">CodeClause Pvt. Ltd.</p>
               <p
                 className="para"
-                style={{ marginTop: "0px", fontSize: "1rem" }}
+                style={{ marginTop: "0px", fontSize: "0.8rem" }}
               >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Consequuntur, error numquam ullam aperiam maxime aut, velit esse
@@ -98,7 +98,7 @@ function Resume() {
                 className="role"
                 style={{
                   color: "#037fff",
-                  fontSize: "1.3rem",
+                  fontSize: "1.2rem",
                   fontWeight: "bold",
                 }}
               >
@@ -107,7 +107,7 @@ function Resume() {
               <p className="comp">Lovely Professional University,Phagwara.</p>
               <p
                 className="para"
-                style={{ marginTop: "0px", fontSize: "1rem" }}
+                style={{ marginTop: "0px", fontSize: "0.8rem" }}
               >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Consequuntur, error numquam ullam aperiam maxime aut, velit esse
@@ -123,7 +123,7 @@ function Resume() {
                 className="role"
                 style={{
                   color: "#037fff",
-                  fontSize: "1.3rem",
+                  fontSize: "1.2rem",
                   fontWeight: "bold",
                 }}
               >
@@ -132,7 +132,7 @@ function Resume() {
               <p className="comp">Pyramid College,Phagwara</p>
               <p
                 className="para"
-                style={{ marginTop: "0px", fontSize: "1rem" }}
+                style={{ marginTop: "0px", fontSize: "0.8rem" }}
               >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Consequuntur, error numquam ullam aperiam maxime aut, velit esse
@@ -148,7 +148,7 @@ function Resume() {
                 className="role"
                 style={{
                   color: "#037fff",
-                  fontSize: "1.3rem",
+                  fontSize: "1.2rem",
                   fontWeight: "bold",
                 }}
               >
@@ -157,7 +157,7 @@ function Resume() {
               <p className="comp">Meritorious School, Jalandhar.</p>
               <p
                 className="para"
-                style={{ marginTop: "0px", fontSize: "1rem" }}
+                style={{ marginTop: "0px", fontSize: "0.8rem" }}
               >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Consequuntur, error numquam ullam aperiam maxime aut, velit esse
