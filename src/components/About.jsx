@@ -1,4 +1,5 @@
 import img from "../assets/1.jpg";
+import profile from "../assets/profile.jpg";
 import { FaCode } from "react-icons/fa";
 import { FaLaptopCode } from "react-icons/fa";
 import pdf from "../assets/CV.pdf";
@@ -22,7 +23,7 @@ function About() {
       <div className="sec1">
         <h1 className="heading">ABOUT ME</h1>
         <div className="img-bio">
-          <img src={img} alt="Me" />
+          <img src={profile} alt="Me" />
           <div className="bio">
             <h2>
               I am <span style={{ color: "#037fff" }}>Ravi Kumar</span>
