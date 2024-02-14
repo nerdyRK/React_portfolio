@@ -1,6 +1,7 @@
 import wp from "../assets/wp.jpg";
 import weather from "../assets/weather.png";
 import coffee from "../assets/coffee.jpg";
+import { Link } from "react-router-dom";
 
 function Projects() {
   let pdata = [
@@ -8,16 +9,19 @@ function Projects() {
       img: wp,
       pname: "WhatsApp Clone Using React",
       pdesc: "It has the functionality of individual chats also.",
+      code: "https://rkmwhatsapp.netlify.app",
     },
     {
       img: weather,
       pname: "Weather App using Vanilla JS",
       pdesc: "It uses the Live data of weather API",
+      code: "https://nerdyrk.github.io/weatherApp/",
     },
     {
       img: coffee,
       pname: "Coffee Shop Website Design",
       pdesc: "This Site is designed for a fictional Coffee shop.",
+      code: "https://nerdyrk.github.io/coffee/",
     },
   ];
   return (
@@ -31,6 +35,7 @@ function Projects() {
               img={item.img}
               pname={item.pname}
               pdesc={item.pdesc}
+              code={item.code}
             />
           );
         })}
@@ -39,11 +44,14 @@ function Projects() {
   );
 }
 
-function Project({ img, pname, pdesc }) {
+function Project({ img, pname, pdesc, code }) {
   return (
     <div className="project-card">
       <img src={img} alt="" />
-      <div className="pname">{pname}</div>
+      <Link to={code} className="pname">
+        <a target="_blank">{pname}</a>
+      </Link>
+
       <div className="pdesc para" style={{ marginTop: "4px" }}>
         {pdesc}
       </div>
