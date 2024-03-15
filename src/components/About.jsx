@@ -1,5 +1,6 @@
 import img from "../assets/1.jpg";
-import profile from "../assets/profile.jpg";
+import profile from "../assets/profile.webp";
+import profile1 from "../assets/profile.jpg";
 import { FaCode } from "react-icons/fa";
 import { FaLaptopCode } from "react-icons/fa";
 import pdf from "../assets/CV.pdf";
@@ -23,7 +24,11 @@ function About() {
       <div className="sec1">
         <h1 className="heading">ABOUT ME</h1>
         <div className="img-bio">
-          <img src={profile} alt="Me" />
+          <picture>
+            <source srcSet={profile} type="image/webp" />
+            <source srcSet={profile1} type="image/jpeg" />
+            <img src={profile1} alt="Me" />
+          </picture>
           <div className="bio">
             <h2>
               I am <span style={{ color: "#037fff" }}>Ravi Kumar</span>

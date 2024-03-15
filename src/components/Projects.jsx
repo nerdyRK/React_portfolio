@@ -1,5 +1,6 @@
 import wp from "../assets/wp.jpg";
 import weather from "../assets/weather.png";
+import weather1 from "../assets/weather.webp";
 import coffee from "../assets/coffee.jpg";
 import { Link } from "react-router-dom";
 
@@ -12,7 +13,7 @@ function Projects() {
       code: "https://rkmwhatsapp.netlify.app",
     },
     {
-      img: weather,
+      img: weather1 || weather,
       pname: "Weather App using Vanilla JS",
       pdesc: "It uses the Live data of weather API",
       code: "https://nerdyrk.github.io/weatherApp/",
@@ -47,7 +48,11 @@ function Projects() {
 function Project({ img, pname, pdesc, code }) {
   return (
     <div className="project-card">
-      <img src={img} alt="" />
+      <picture>
+        <source srcSet={img} type="image/webp" />
+        <source srcSet={img} type="image/jpeg" />
+        <img src={img} alt="Me" />
+      </picture>
       <Link to={code} className="pname">
         <a target="_blank">{pname}</a>
       </Link>

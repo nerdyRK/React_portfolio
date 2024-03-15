@@ -6,7 +6,7 @@
 }
 
 .app {
-  width: 100vw;
+  width: 100dvw;
   /* height: 100vh; */
   display: flex;
 
@@ -109,7 +109,7 @@ nav li a:active {
   align-items: center;
   text-align: center;
   padding: 0 10%;
-  height: 100vh;
+  height: 100dvh;
 }
 
 .main-area h1 {
@@ -171,8 +171,9 @@ nav li a:active {
   /* width: clamp(200px, 30%, 90%); */
   width: 45%;
   min-width: 250px;
+  max-height: 400px;
   /* height: 60vh; */
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .bio {
@@ -401,7 +402,7 @@ nav li a:active {
 
 .contact {
   background-color: #10121b;
-  min-height: 95vh;
+  min-height: 95dvh;
 }
 
 .contact .heading {
