@@ -495,7 +495,7 @@ textarea {
 .contact-left,
 .contact-right {
   display: flex;
-  width: 50%;
+  width: 100%;
   justify-content: center;
   align-items: start;
   margin: 0 auto;
@@ -504,9 +504,13 @@ textarea {
   flex-direction: column;
   position: relative;
 }
-
+.contact-left-parent {
+  width: 100%;
+}
 .contact-left {
   gap: 1rem;
+  pointer-events: none;
+  filter: blur(2px);
 }
 
 .contact-card {
@@ -556,7 +560,9 @@ textarea {
   .contact-right {
     width: 100%;
   }
-
+  .contact-left-parent {
+    display: none;
+  }
   .sidebar {
     z-index: 111;
     transition: all 0.3s ease;
@@ -653,6 +659,7 @@ textarea {
 }
 
 .type-effect p {
+  font-family: sans-serif;
   color: white;
   font-size: 1.5rem;
 }

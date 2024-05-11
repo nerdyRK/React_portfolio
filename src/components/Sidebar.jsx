@@ -1,12 +1,13 @@
 import { NavLink } from "react-router-dom";
 import img from "../assets/rk3.jpg";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { FaTimes } from "react-icons/fa";
 
 function Sidebar() {
   const [btnVisibility, setBtnVisibility] = useState(false);
   const [sidebarPosition, setSidebarPosition] = useState("0");
+  const sideNavRef = useRef(null); // Ref for detecting clicks outside the sidebar
 
   useEffect(() => {
     function handleResize() {
@@ -40,16 +41,35 @@ function Sidebar() {
     fontWeight: "bold",
   };
 
+  // Function to handle clicks outside the sidebar
+  const handleClickOutside = (event) => {
+    if (sideNavRef.current && !sideNavRef.current.contains(event.target)) {
+      // Check if the screen width is less than or equal to 700px (mobile screen)
+      if (window.innerWidth <= 700) {
+        setBtnVisibility(true); // Close the sidebar if clicked outside on mobile screens
+      }
+    }
+  };
+
+  // Add the event listener when the component mounts
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
     <div
+      ref={sideNavRef} // Attach the ref here
       className="sidebar"
       style={{ transform: `translateX(${sidebarPosition})` }}
     >
-      <button className="button-container">
+      <button className="button-container" onClick={handleClick}>
         {btnVisibility ? (
-          <RxHamburgerMenu className="burger" onClick={handleClick} />
+          <RxHamburgerMenu className="burger" />
         ) : (
-          <FaTimes className="burger" onClick={handleClick} />
+          <FaTimes className="burger" />
         )}
       </button>
       <div className="side-img">

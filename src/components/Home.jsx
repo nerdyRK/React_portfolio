@@ -8,10 +8,11 @@ function Home() {
   return (
     <div className="main-area home">
       <h1>
-        Hi, I am{" "}
+        Hi, Its{" "}
         <span style={{ color: "#037fff", fontFamily: "Kaushan script" }}>
-          Ravi Kumar
+          Ravi
         </span>
+        &nbsp;here
       </h1>
       <div className="type-effect">
         <p> I am a</p>

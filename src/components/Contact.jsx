@@ -8,37 +8,52 @@ function Contact() {
       <h2 className="heading" style={{ marginLeft: "4%" }}>
         Contact Me
       </h2>
-      <p style={{ fontSize: "1.5rem", margin: "4% 0 0 4%" }}>Get in Touch</p>
+      <div style={{ fontSize: "1.5rem", margin: "4% 0 0 4%" }}>
+        Get in Touch
+      </div>
       <div className="wrapper">
-        <div className="contact-left">
-          <InputField text={"Enter your name"} />
-          <InputField text={"Enter your Email"} />
-          <InputField text={"Enter your Subject"} />
-          <div className="contact-input-div">
-            <label htmlFor="msg" className="contact-label">
-              Enter Your Message*{" "}
-            </label>
-            <textarea id="msg" rows={4} />
-          </div>
-          <button className="mail-btn" type="submit">
-            Send Mail
-          </button>
+        <div className="contact-left-parent">
+          <p
+            style={{
+              color: "tomato",
+              fontSize: "1rem",
+              marginLeft: "6%",
+              fontWeight: "bold",
+            }}
+          >
+            contact form is under maintainance you can click on the icons
+            instead.
+          </p>
+          <form className="contact-left">
+            <InputField text={"Enter your name"} />
+            <InputField text={"Enter your Email"} />
+            <InputField text={"Enter your Subject"} />
+            <div className="contact-input-div">
+              <label htmlFor="msg" className="contact-label">
+                Enter Your Message*{" "}
+              </label>
+              <textarea id="msg" rows={4} />
+            </div>
+            <button className="mail-btn" type="submit">
+              Send Mail
+            </button>
+          </form>
         </div>
         <div className="contact-right">
           <ContactCard
             icon={<IoCallOutline />}
             name="Phone"
-            items={["+91 1234567890", "+91 1234567890"]}
+            items={["+91 78229-43926", "+91 84277-33093"]}
           />
           <ContactCard
             icon={<MdOutlineEmail />}
             name="Email"
-            items={["raghu@rokda.com", "rk@studio.com"]}
+            items={["rkmall321@gmail.com"]}
           />
           <ContactCard
             icon={<IoLocationOutline />}
             name="Address"
-            items={["Khalwara near Phagwara"]}
+            items={["Phagwara,Punjab,IN"]}
           />
         </div>
       </div>
@@ -50,7 +65,7 @@ function InputField({ text }) {
   return (
     <div className="contact-input-div">
       <label className="contact-label">{text}*</label>
-      <input type="text" className="contact-input" />
+      <input type="text" className="contact-input" readOnly />
     </div>
   );
 }

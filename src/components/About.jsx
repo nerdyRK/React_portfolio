@@ -31,7 +31,10 @@ function About() {
           </picture>
           <div className="bio">
             <h2>
-              I am <span style={{ color: "#037fff" }}>Ravi Kumar</span>
+              I am{" "}
+              <span style={{ color: "#037fff", fontFamily: "Kaushan script" }}>
+                Ravi Kumar
+              </span>
             </h2>
             <p className="para">
               I am a frontend web developer. I can provide clean code and pixel
