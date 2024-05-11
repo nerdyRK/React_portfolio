@@ -10,7 +10,7 @@ function Projects() {
       img: wp,
       pname: "WhatsApp Clone Using React",
       pdesc: "It has the functionality of individual chats also.",
-      code: "https://rkmwhatsapp.netlify.app",
+      code: "https://rk-wp-clone.netlify.app/",
     },
     {
       img: weather1 || weather,
