@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import img from "../assets/rk3.jpg";
 import { useState, useEffect } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -34,6 +34,12 @@ function Sidebar() {
     setBtnVisibility(!btnVisibility);
   }
 
+  const activeLinkStyles = {
+    color: "white",
+    backgroundColor: "#008cff",
+    fontWeight: "bold",
+  };
+
   return (
     <div
       className="sidebar"
@@ -50,21 +56,46 @@ function Sidebar() {
         <img src={img} style={{ border: "5px solid grey" }} alt="" />
       </div>
       <nav>
-        <ul>
+        <ul className="side-links">
           <li>
-            <Link to="/">HOME</Link>
+            <NavLink
+              to="/"
+              style={({ isActive }) => (isActive ? activeLinkStyles : {})}
+            >
+              HOME
+            </NavLink>
           </li>
           <li>
-            <Link to="/about">ABOUT</Link>
+            <NavLink
+              to="/about"
+              style={({ isActive }) => (isActive ? activeLinkStyles : {})}
+            >
+              ABOUT
+            </NavLink>
           </li>
           <li>
-            <Link to="/resume">RESUME</Link>
+            <NavLink
+              to="/resume"
+              style={({ isActive }) => (isActive ? activeLinkStyles : {})}
+            >
+              RESUME
+            </NavLink>
           </li>
           <li>
-            <Link to="/projects">PROJECTS</Link>
+            <NavLink
+              to="/projects"
+              style={({ isActive }) => (isActive ? activeLinkStyles : {})}
+            >
+              PROJECTS
+            </NavLink>
           </li>
           <li>
-            <Link to="/contact">CONTACT</Link>
+            <NavLink
+              to="/contact"
+              style={({ isActive }) => (isActive ? activeLinkStyles : {})}
+            >
+              CONTACT
+            </NavLink>
           </li>
         </ul>
       </nav>

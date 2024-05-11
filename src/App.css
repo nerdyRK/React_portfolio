@@ -9,8 +9,6 @@
   width: 100dvw;
   /* height: 100vh; */
   display: flex;
-
-
 }
 
 .sidebar {
@@ -25,7 +23,7 @@
   width: 24vw;
   min-width: 200px;
   align-items: center;
-  border-right: 1px solid rgb(128, 0, 128);
+  border-right: 1px solid #2e9df9;
 }
 
 nav {
@@ -53,16 +51,14 @@ nav li a {
   width: 100%;
 }
 
-
-
 nav li a:hover {
-  background-color: rgb(16, 139, 180);
+  background-color: #008cff85;
   color: aliceblue;
 }
 
-nav li a:active {
+/* nav li a:active {
   background-color: rgb(70, 155, 201);
-}
+} */
 
 .side-img img {
   width: 150px;
@@ -80,13 +76,33 @@ nav li a:active {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: 1px solid purple;
+  /* border-bottom: 1px solid #2e9df9; */
   width: 100%;
   min-height: 200px;
 }
 
+.side-img img {
+  animation: rotate 5s linear infinite;
+  animation-direction: alternate;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(-20deg);
+  }
+  to {
+    transform: rotate(30deg);
+  }
+}
+.side-img img:hover {
+  scale: 1.1;
+  animation-play-state: paused;
+}
+
 .desc {
-  border-top: 1px solid purple;
+  border-top: 1px solid #2e9df9;
   width: 100%;
   height: 10%;
   padding: 20px 0;
@@ -129,43 +145,39 @@ nav li a:active {
 .social-icons a {
   padding: 10px;
   display: inline-block;
-  color: aliceblue;
+  color: rgb(2, 133, 248);
 
   transition: transform 0.3s ease, color 0.3s ease;
-
-
 }
 
 .social-icons a:hover {
-  color: skyblue;
+  color: rgb(0, 101, 141);
   transform: scale(1.05);
 }
 
 .about {
-
   background-color: #10121b;
   /* display: flex; */
   /* width: 76vw; */
   padding: 0% 12px;
   overflow-x: hidden;
   overflow-y: auto;
-
 }
 
 .img-bio {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  /* background-color: #037fff; */
+  align-items: space-between;
   justify-content: center;
   width: 100%;
   gap: 3%;
   margin-top: 7%;
 }
 
-.about h1 {
+/* .about h1 {
   font-size: 3rem;
-
-}
+} */
 
 .img-bio img {
   /* width: clamp(200px, 30%, 90%); */
@@ -178,6 +190,10 @@ nav li a:active {
 
 .bio {
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
 }
 
 .bio .para {
@@ -185,7 +201,8 @@ nav li a:active {
 }
 
 .heading {
-  font-size: 2rem;
+  text-align: center;
+  font-size: clamp(24px, 2.2rem, 50px);
   filter: drop-shadow(13px 30px 1px #5a5a6157);
 }
 
@@ -208,10 +225,34 @@ nav li a:active {
 .mail-btn {
   padding: 10px 20px;
   font-size: 1.1rem;
-  background-color: #037fff;
-  /* margin-top: 10px; */
+  background-color: transparent;
   cursor: pointer;
+  position: relative;
   align-self: start;
+  font-weight: 500;
+  transition: 0.3s ease;
+  z-index: 2; /* Ensure the button has a z-index */
+}
+.cv-btn {
+  color: rgb(217, 6, 6) !important;
+  margin-bottom: 4px;
+}
+.cv-btn::before,
+.mail-btn::before {
+  content: "";
+  background-color: #1394ff;
+  transition: 0.3s ease;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0%;
+  z-index: -1; /* Ensure the pseudo-element has a higher z-index */
+}
+
+.cv-btn:hover::before,
+.mail-btn:hover::before {
+  width: 100%;
 }
 
 .cv-btn a {
@@ -235,7 +276,7 @@ nav li a:active {
 }
 
 .service-card {
-  border-top: 4px solid rgba(128, 128, 128, 0.546);
+  border-top: 4px solid #2e9df9;
   box-shadow: 1px 1px 3px gray;
   padding: 18px 36px;
   min-width: 250px;
@@ -252,8 +293,6 @@ nav li a:active {
   /* background-color: #fff; */
 }
 
-
-
 .service-card .icon {
   font-size: 2rem;
   color: #33cbedee;
@@ -263,7 +302,6 @@ nav li a:active {
   font-size: 1.4rem;
   /* color: #33cbedee; */
   margin-bottom: 10px;
-
 }
 
 .projects {
@@ -462,7 +500,6 @@ textarea {
   position: relative;
 }
 
-
 .contact-left {
   gap: 1rem;
 }
@@ -496,7 +533,6 @@ textarea {
   cursor: pointer;
 }
 
-
 .button-container {
   position: absolute;
   top: 20px;
@@ -506,7 +542,7 @@ textarea {
   /* Ensure the button is above other content */
 }
 
-@media(max-width:700px) {
+@media (max-width: 700px) {
   .wrapper {
     flex-wrap: wrap;
   }
@@ -558,10 +594,9 @@ textarea {
     transform: translatey(-10px);
     opacity: 1;
   }
-
 }
 
-@media(max-width:820px) {
+@media (max-width: 820px) {
   .img-bio img {
     width: 90%;
     max-width: 90%;
@@ -586,7 +621,6 @@ textarea {
   }
 
   .project-card {
-
     width: 90%;
     /* overflow: hidden; */
     background: #5a5a07;
