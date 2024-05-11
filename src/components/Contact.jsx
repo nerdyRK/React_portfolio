@@ -21,7 +21,7 @@ function Contact() {
               fontWeight: "bold",
             }}
           >
-            contact form is under maintainance you can click on the icons
+            contact form is under maintainance you can use the contact info
             instead.
           </p>
           <form className="contact-left">

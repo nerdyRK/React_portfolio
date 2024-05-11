@@ -560,6 +560,10 @@ textarea {
   .contact-right {
     width: 100%;
   }
+  .contact-right {
+    margin-top: 30px;
+    width: 100%;
+  }
   .contact-left-parent {
     display: none;
   }
