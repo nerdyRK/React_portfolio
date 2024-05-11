@@ -1,4 +1,6 @@
 /* CSS Reset */
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -109,6 +111,9 @@ nav li a:hover {
 }
 
 .main-area {
+  border-top: 2px solid #2e9df9;
+  border-bottom: 2px solid #2e9df9;
+
   width: 76vw;
   /* z-index: -1; */
   background-color: #191d2b;
@@ -440,7 +445,7 @@ nav li a:hover {
 
 .contact {
   background-color: #10121b;
-  min-height: 95dvh;
+  min-height: 100dvh;
 }
 
 .contact .heading {
@@ -639,3 +644,15 @@ textarea {
   left: 0;
   border-radius: 50%;
 } */
+
+.type-effect {
+  font-weight: 900;
+  font-family: "kaushan script";
+  font-size: 2rem;
+  color: #1394ff;
+}
+
+.type-effect p {
+  color: white;
+  font-size: 1.5rem;
+}
