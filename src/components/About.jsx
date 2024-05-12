@@ -1,4 +1,3 @@
-import img from "../assets/1.jpg";
 import profile from "../assets/profile.webp";
 import profile1 from "../assets/profile.jpg";
 import { FaCode } from "react-icons/fa";
@@ -27,7 +26,7 @@ function About() {
           <picture>
             <source srcSet={profile} type="image/webp" />
             <source srcSet={profile1} type="image/jpeg" />
-            <img src={profile1} alt="Me" />
+            <img src={profile || profile1} alt="Me" />
           </picture>
           <div className="bio">
             <h2>

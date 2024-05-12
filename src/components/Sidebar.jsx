@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import img from "../assets/rk3.jpg";
+import img1 from "../assets/rk3.webp";
 import { useState, useEffect, useRef } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { FaTimes } from "react-icons/fa";
@@ -73,7 +74,7 @@ function Sidebar() {
         )}
       </button>
       <div className="side-img">
-        <img src={img} style={{ border: "5px solid grey" }} alt="" />
+        <img src={img1 || img} style={{ border: "5px solid grey" }} alt="" />
       </div>
       <nav>
         <ul className="side-links">

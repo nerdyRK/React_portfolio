@@ -18,7 +18,7 @@ function Home() {
         <p> I am a</p>
         <Typewriter
           options={{
-            strings: ["Frontend Web Developer", "MERN Stack Developer"],
+            strings: ["Frontend Dev.", "MERN Stack Dev."],
             autoStart: true,
             loop: true,
           }}

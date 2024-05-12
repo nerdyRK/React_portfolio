@@ -1,13 +1,15 @@
 import wp from "../assets/wp.jpg";
+import wp1 from "../assets/wp.webp";
 import weather from "../assets/weather.png";
 import weather1 from "../assets/weather.webp";
 import coffee from "../assets/coffee.jpg";
+import coffee1 from "../assets/coffee.webp";
 import { Link } from "react-router-dom";
 
 function Projects() {
   let pdata = [
     {
-      img: wp,
+      img: wp1 || wp,
       pname: "WhatsApp Clone Using React",
       pdesc: "It has the functionality of individual chats also.",
       code: "https://rk-wp-clone.netlify.app/",
@@ -19,7 +21,7 @@ function Projects() {
       code: "https://nerdyrk.github.io/weatherApp/",
     },
     {
-      img: coffee,
+      img: coffee1 || coffee,
       pname: "Coffee Shop Website Design",
       pdesc: "This Site is designed for a fictional Coffee shop.",
       code: "https://nerdyrk.github.io/coffee/",

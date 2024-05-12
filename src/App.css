@@ -361,6 +361,13 @@ nav li a:hover {
   padding: 0 8px;
   font-weight: bold;
   font-size: 1.2rem;
+  text-decoration: none;
+}
+.project-card .pname a {
+  color: #217dd8;
+}
+.project-card .pname a:hover {
+  color: #004d9a;
 }
 
 .project-card .para {
