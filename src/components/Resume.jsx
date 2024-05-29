@@ -175,7 +175,15 @@ function Resume() {
 function SkillIcon({ icon, name, color }) {
   return (
     <div className="skill-icon">
-      <div style={{ color: color, fontSize: "2.6rem" }}>{icon}</div>
+      <div
+        style={{
+          color: color,
+          fontSize: "2.6rem",
+          backdropFilter: `${color}`,
+        }}
+      >
+        {icon}
+      </div>
       <div className="skill-name" style={{ color: color, fontWeight: "bold" }}>
         {name}
       </div>

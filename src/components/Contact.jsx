@@ -1,8 +1,72 @@
-import { IoCallOutline } from "react-icons/io5";
-import { IoLocationOutline } from "react-icons/io5";
+import React, { useState, useEffect } from "react";
+import { IoCallOutline, IoLocationOutline } from "react-icons/io5";
 import { MdOutlineEmail } from "react-icons/md";
 
 function Contact() {
+  const [randomNumber, setRandomNumber] = useState(generateRandomNumber());
+  const [captchaInput, setCaptchaInput] = useState("");
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+  const [error, setError] = useState("");
+
+  function generateRandomNumber() {
+    return Math.floor(100 + Math.random() * 900); // Generates a 3-digit number
+  }
+
+  useEffect(() => {
+    setRandomNumber(generateRandomNumber());
+  }, []);
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleCaptchaChange = (e) => {
+    setCaptchaInput(e.target.value);
+  };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    if (parseInt(captchaInput) !== randomNumber) {
+      setError("Incorrect captcha");
+      return;
+    }
+
+    const formElement = event.target;
+    const formDataObj = new FormData(formElement);
+
+    const response = await fetch("https://formspree.io/f/xoqgzglr", {
+      method: "POST",
+      body: formDataObj,
+      headers: {
+        Accept: "application/json",
+      },
+    });
+
+    if (response.ok) {
+      setFormData({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+      });
+      setCaptchaInput("");
+      setRandomNumber(generateRandomNumber());
+      setError("");
+      alert("Message sent successfully!");
+      window.location.href = "/contact";
+    } else {
+      setError("Something went wrong. Please try again.");
+    }
+  };
+
   return (
     <div className="main-area contact">
       <h2 className="heading" style={{ marginLeft: "4%" }}>
@@ -13,27 +77,56 @@ function Contact() {
       </div>
       <div className="wrapper">
         <div className="contact-left-parent">
-          <p
-            style={{
-              color: "tomato",
-              fontSize: "1rem",
-              marginLeft: "6%",
-              fontWeight: "bold",
-            }}
-          >
-            contact form is under maintainance you can use the contact info
-            instead.
-          </p>
-          <form className="contact-left">
-            <InputField text={"Enter your name"} />
-            <InputField text={"Enter your Email"} />
-            <InputField text={"Enter your Subject"} />
+          <form onSubmit={handleSubmit} className="contact-left">
+            <InputField
+              name="name"
+              text="Enter your name"
+              value={formData.name}
+              onChange={handleChange}
+            />
+            <InputField
+              name="email"
+              text="Enter your Email"
+              value={formData.email}
+              onChange={handleChange}
+            />
+            <InputField
+              name="subject"
+              text="Enter your Subject"
+              value={formData.subject}
+              onChange={handleChange}
+            />
             <div className="contact-input-div">
               <label htmlFor="msg" className="contact-label">
                 Enter Your Message*{" "}
               </label>
-              <textarea id="msg" rows={4} />
+              <textarea
+                name="message"
+                id="msg"
+                rows={4}
+                value={formData.message}
+                onChange={handleChange}
+              />
             </div>
+            <div className="contact-input-div">
+              <label className="contact-label">
+                Enter the number{" "}
+                <span
+                  style={{ color: "#ff0000", fontFamily: "Kaushan script" }}
+                >
+                  {randomNumber}*
+                </span>
+              </label>
+              <input
+                name="captcha"
+                type="text"
+                className="contact-input"
+                value={captchaInput}
+                onChange={handleCaptchaChange}
+                required
+              />
+            </div>
+            {error && <p style={{ color: "red" }}>{error}</p>}
             <button className="mail-btn" type="submit">
               Send Mail
             </button>
@@ -61,11 +154,18 @@ function Contact() {
   );
 }
 
-function InputField({ text }) {
+function InputField({ text, name, value, onChange }) {
   return (
     <div className="contact-input-div">
       <label className="contact-label">{text}*</label>
-      <input type="text" className="contact-input" readOnly />
+      <input
+        name={name}
+        type="text"
+        className="contact-input"
+        value={value}
+        onChange={onChange}
+        required
+      />
     </div>
   );
 }

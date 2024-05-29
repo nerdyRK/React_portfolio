@@ -7,7 +7,7 @@ import { FaTimes } from "react-icons/fa";
 
 function Sidebar() {
   const [btnVisibility, setBtnVisibility] = useState(false);
-  const [sidebarPosition, setSidebarPosition] = useState("0");
+  const [sidebarPosition, setSidebarPosition] = useState("-200px");
   const sideNavRef = useRef(null); // Ref for detecting clicks outside the sidebar
 
   useEffect(() => {
