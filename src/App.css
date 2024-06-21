@@ -331,7 +331,7 @@ nav li a:hover {
   margin: 2vh 0;
   min-width: 250px;
   width: 45%;
-  border: 2px solid aliceblue;
+  border: 2px solid #008cff;
   /* overflow: hidden; */
   /* background: #614a4a; */
 }
@@ -340,9 +340,10 @@ nav li a:hover {
   /* width: 45%; */
   width: 100%;
   height: 250px;
-  object-fit: cover;
+  object-fit: fill;
+  /* padding: 10px; */
   position: relative;
-  border-bottom: 2px solid aliceblue;
+  border-bottom: 2px solid #008cff;
 }
 
 .project-card img::after {
@@ -363,7 +364,7 @@ nav li a:hover {
   font-size: 1.2rem;
   text-decoration: none;
 }
-.project-card .pname a {
+.project-card .pname {
   color: #217dd8;
 }
 .project-card .pname a:hover {

@@ -4,10 +4,18 @@ import weather from "../assets/weather.png";
 import weather1 from "../assets/weather.webp";
 import coffee from "../assets/coffee.jpg";
 import coffee1 from "../assets/coffee.webp";
+import tac from "../assets/tac.png";
 import { Link } from "react-router-dom";
 
 function Projects() {
   let pdata = [
+    {
+      img: tac,
+      pname: "Trust and Care",
+      pdesc:
+        "A real company website that i developed using React and Tailwind.",
+      code: "https://trustandcare.co.in/",
+    },
     {
       img: wp1 || wp,
       pname: "WhatsApp Clone Using React",
@@ -55,11 +63,16 @@ function Project({ img, pname, pdesc, code }) {
         <source srcSet={img} type="image/jpeg" />
         <img src={img} alt="Me" />
       </picture>
-      <Link to={code} className="pname">
-        <a target="_blank">{pname}</a>
-      </Link>
 
-      <div className="pdesc para" style={{ marginTop: "4px" }}>
+      <a href={code} target="_blank" className="pname">
+        {pname}
+      </a>
+
+      <div
+        className="pdesc para"
+        title={pdesc}
+        style={{ marginTop: "4px", cursor: "pointer" }}
+      >
         {pdesc}
       </div>
     </div>
