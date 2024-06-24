@@ -25,17 +25,22 @@ function Home() {
         />
       </div>
       <p className="para">
-        I can provide clean code and pixel perfect design. I also make website
-        more & more interactive with web animations.
+        Skilled in writing clean, efficient code and creating pixel-perfect
+        designs. I enhance websites with engaging and interactive elements,
+        including smooth transitions and animations.
       </p>
       <div className="social-icons">
-        <a href="https://github.com/nerdyRK" target="_blank">
+        <a href="https://github.com/nerdyRK" title="Github" target="_blank">
           <TiSocialGithubCircular />
         </a>
-        <a href="https://www.linkedin.com/in/ravk/" target="_blank">
+        <a
+          href="https://www.linkedin.com/in/ravk/"
+          title="Linkedin"
+          target="_blank"
+        >
           <CiLinkedin />
         </a>
-        <a href="" target="_blank">
+        <a href="" title="Nothing">
           <CiFacebook />
         </a>
       </div>

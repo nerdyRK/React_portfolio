@@ -1,6 +1,6 @@
 import { gsap } from "gsap";
 import { useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Sidebar from "./components/Sidebar";
 import Home from "./components/Home";
 import About from "./components/About";
@@ -54,7 +54,19 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route
             path="*"
-            element={<h1 className="not-found">404 Page Not Found</h1>}
+            element={
+              <div className="not-found">
+                <h1>404 Page Not Found</h1>
+                <p>
+                  Where are you wandering? Go back to Home mate{" "}
+                  <span style={{ color: "red" }}>!!</span>
+                  <br /> 👇
+                </p>
+                <Link to="/" className="homebtn">
+                  Go Home
+                </Link>
+              </div>
+            }
           />
         </Routes>
       </div>

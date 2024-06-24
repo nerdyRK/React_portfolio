@@ -76,62 +76,59 @@ function Contact() {
         Get in Touch
       </div>
       <div className="wrapper">
-        <div className="contact-left-parent">
-          <form onSubmit={handleSubmit} className="contact-left">
-            <InputField
-              name="name"
-              text="Enter your name"
-              value={formData.name}
+        <form onSubmit={handleSubmit} className="contact-left">
+          <InputField
+            name="name"
+            text="Enter your name"
+            value={formData.name}
+            onChange={handleChange}
+          />
+          <InputField
+            name="email"
+            text="Enter your Email"
+            value={formData.email}
+            onChange={handleChange}
+          />
+          <InputField
+            name="subject"
+            text="Enter your Subject"
+            value={formData.subject}
+            onChange={handleChange}
+          />
+          <div className="contact-input-div">
+            <label htmlFor="msg" className="contact-label">
+              Enter Your Message*{" "}
+            </label>
+            <textarea
+              name="message"
+              id="msg"
+              rows={4}
+              value={formData.message}
               onChange={handleChange}
             />
-            <InputField
-              name="email"
-              text="Enter your Email"
-              value={formData.email}
-              onChange={handleChange}
+          </div>
+          <div className="contact-input-div">
+            <label className="contact-label">
+              Enter the number{" "}
+              <span style={{ color: "#ff0000", fontFamily: "Kaushan script" }}>
+                {randomNumber}*
+              </span>
+            </label>
+            <input
+              name="captcha"
+              type="text"
+              className="contact-input"
+              value={captchaInput}
+              onChange={handleCaptchaChange}
+              required
             />
-            <InputField
-              name="subject"
-              text="Enter your Subject"
-              value={formData.subject}
-              onChange={handleChange}
-            />
-            <div className="contact-input-div">
-              <label htmlFor="msg" className="contact-label">
-                Enter Your Message*{" "}
-              </label>
-              <textarea
-                name="message"
-                id="msg"
-                rows={4}
-                value={formData.message}
-                onChange={handleChange}
-              />
-            </div>
-            <div className="contact-input-div">
-              <label className="contact-label">
-                Enter the number{" "}
-                <span
-                  style={{ color: "#ff0000", fontFamily: "Kaushan script" }}
-                >
-                  {randomNumber}*
-                </span>
-              </label>
-              <input
-                name="captcha"
-                type="text"
-                className="contact-input"
-                value={captchaInput}
-                onChange={handleCaptchaChange}
-                required
-              />
-            </div>
-            {error && <p style={{ color: "red" }}>{error}</p>}
-            <button className="mail-btn" type="submit">
-              Send Mail
-            </button>
-          </form>
-        </div>
+          </div>
+          {error && <p style={{ color: "red" }}>{error}</p>}
+          <button className="mail-btn" type="submit">
+            Send Mail
+          </button>
+        </form>
+
         <div className="contact-right">
           <ContactCard
             icon={<IoCallOutline />}

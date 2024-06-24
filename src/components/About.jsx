@@ -2,19 +2,20 @@ import profile from "../assets/profile.webp";
 import profile1 from "../assets/profile.jpg";
 import { FaCode } from "react-icons/fa";
 import { FaLaptopCode } from "react-icons/fa";
-import pdf from "../assets/CV.pdf";
+import pdf from "../assets/cv.pdf";
 
 function About() {
   let serviceObj = [
     {
       icon: <FaCode />,
-      service: "Web Design",
+      service: "Frontend Development",
       sDesc: "I can create beautiful and interactive web designs for ya..",
     },
     {
       icon: <FaLaptopCode />,
-      service: "Web Development",
-      sDesc: "I can develop your web-app from scratch both front-end for ya..",
+      service: "Fullstack Development",
+      sDesc:
+        "I can develop your web-app from scratch both front-end and back-end for ya..",
     },
   ];
 
@@ -36,9 +37,10 @@ function About() {
               </span>
             </h2>
             <p className="para">
-              I am a frontend web developer. I can provide clean code and pixel
-              perfect design. I also make website more & more interactive with
-              web animations.
+              I am a Frontend/Fullstack web developer skilled in writing clean,
+              efficient code and creating pixel-perfect designs. I enhance
+              websites with engaging and interactive elements, including smooth
+              transitions and animations.
             </p>
             <ul className="para">
               <li>

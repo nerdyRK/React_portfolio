@@ -49,7 +49,7 @@ function Resume() {
                   fontWeight: "bold",
                 }}
               >
-                Software Developer, Intern
+                Software Developer Engineer
               </div>
               <p className="comp">ApixLabs, Pune</p>
               <p
