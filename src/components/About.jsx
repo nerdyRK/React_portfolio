@@ -2,7 +2,7 @@ import profile from "../assets/profile.webp";
 import profile1 from "../assets/profile.jpg";
 import { FaCode } from "react-icons/fa";
 import { FaLaptopCode } from "react-icons/fa";
-import pdf from "../assets/cv.pdf";
+import pdf from "../assets/CV.pdf";
 
 function About() {
   let serviceObj = [
