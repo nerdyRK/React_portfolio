@@ -660,7 +660,7 @@ textarea {
   .project-card {
     width: 90%;
     /* overflow: hidden; */
-    background: #5a5a07;
+    /* background: #5a5a07; */
   }
 }
 

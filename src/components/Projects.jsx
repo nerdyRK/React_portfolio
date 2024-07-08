@@ -10,6 +10,12 @@ import { Link } from "react-router-dom";
 function Projects() {
   let pdata = [
     {
+      img: "https://www.91-cdn.com/hub/wp-content/uploads/2023/11/How-to-login-and-use-Telegram-web-on-Windows-and-Mac.png",
+      pname: "Resposnive Telegram UI Replica (React+Tailwind)",
+      pdesc: "Chats fetched from the API. Added Dark/light Theme.",
+      code: "https://rk-telegram.netlify.app//",
+    },
+    {
       img: tac,
       pname: "Trust and Care",
       pdesc:
