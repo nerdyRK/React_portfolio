@@ -39,7 +39,7 @@ function Resume() {
         <h2>Working Experience</h2>
         <div className="works">
           <section className="first">
-            <p className="timing">Jan 2024-Present</p>
+            <p className="timing">Aug 2023-Present</p>
             <div className="company">
               <div
                 className="role"
@@ -64,7 +64,7 @@ function Resume() {
             </div>
           </section>
           <section className="first">
-            <p className="timing">Nov 2023-Dec 2023</p>
+            <p className="timing">Jul 2023-Aug 2023</p>
             <div className="company">
               <div
                 className="role"
