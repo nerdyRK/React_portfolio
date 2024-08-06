@@ -5,16 +5,17 @@ import weather1 from "../assets/weather.webp";
 import coffee from "../assets/coffee.jpg";
 import coffee1 from "../assets/coffee.webp";
 import tac from "../assets/tac.png";
-import { Link } from "react-router-dom";
+import asegroup from "../assets/asegroup.png";
 
 function Projects() {
   let pdata = [
     {
-      img: "https://www.91-cdn.com/hub/wp-content/uploads/2023/11/How-to-login-and-use-Telegram-web-on-Windows-and-Mac.png",
-      pname: "Resposnive Telegram UI Replica (React+Tailwind)",
-      pdesc: "Chats fetched from the API. Added Dark/light Theme.",
-      code: "https://rk-telegram.netlify.app//",
+      img: asegroup,
+      pname: "Asegroup(React+Tailwind+AOS+EmailJS)",
+      pdesc: "A product catalog website for a malysia based company.",
+      code: "https://asegroup.my/",
     },
+    //
     {
       img: tac,
       pname: "Trust and Care",
@@ -67,7 +68,7 @@ function Project({ img, pname, pdesc, code }) {
       <picture>
         <source srcSet={img} type="image/webp" />
         <source srcSet={img} type="image/jpeg" />
-        <img src={img} alt="Me" />
+        <img src={img} alt="project image" />
       </picture>
 
       <a href={code} target="_blank" className="pname">

@@ -336,9 +336,9 @@ nav li a:hover {
   display: flex;
   width: 100%;
   gap: 5%;
-  justify-content: center;
+  /* justify-content: center; */
   padding: 4vh 0;
-  align-items: center;
+  /* align-items: center; */
   flex-wrap: wrap;
 }
 
@@ -347,6 +347,7 @@ nav li a:hover {
   min-width: 250px;
   width: 45%;
   border: 2px solid #008cff;
+  overflow: hidden;
   /* overflow: hidden; */
   /* background: #614a4a; */
 }
@@ -378,17 +379,20 @@ nav li a:hover {
   font-weight: bold;
   font-size: 1.2rem;
   text-decoration: none;
-}
-.project-card .pname {
   color: #217dd8;
+  white-space: nowrap;
+  overflow: hidden;
+  /* Hides any text that overflows the element's box */
+  text-overflow: ellipsis;
 }
+
 .project-card .pname a:hover {
   color: #004d9a;
 }
 
 .project-card .para {
   padding: 0 8px;
-  white-space: nowrap;
+  /* white-space: nowrap; */
   /* Prevents the text from wrapping to the next line */
   overflow: hidden;
   /* Hides any text that overflows the element's box */
@@ -576,6 +580,11 @@ textarea {
 @media (max-width: 700px) {
   .wrapper {
     flex-wrap: wrap;
+  }
+
+  .project-list {
+    align-items: center;
+    justify-content: center;
   }
 
   .contact-left,
