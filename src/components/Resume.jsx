@@ -39,7 +39,7 @@ function Resume() {
         <h2>Working Experience</h2>
         <div className="works">
           <section className="first">
-            <p className="timing">Aug 2023-Present</p>
+            <p className="timing">Jan 2024-jul 2024</p>
             <div className="company">
               <div
                 className="role"
@@ -49,17 +49,16 @@ function Resume() {
                   fontWeight: "bold",
                 }}
               >
-                Software Developer Engineer
+                Software Developer Engineer Intern
               </div>
               <p className="comp">ApixLabs, Pune</p>
               <p
                 className="para"
                 style={{ marginTop: "0px", fontSize: "0.8rem" }}
               >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Consequuntur, error numquam ullam aperiam maxime aut, velit esse
-                enim amet necessitatibus, delectus laudantium nemo nulla
-                voluptas officiis debitis corrupti excepturi fugit!
+                Learned in depth about Frontend development using ReactJS and
+                Tailwind.Developed robust APIs and web applications. Learned to
+                work in a competitive and fast paced environment.
               </p>
             </div>
           </section>
