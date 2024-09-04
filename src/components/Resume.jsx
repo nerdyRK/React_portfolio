@@ -141,7 +141,7 @@ function Resume() {
             </div>
           </section>
           <section className="first">
-            <p className="timing">Jan 2024-Present</p>
+            <p className="timing">2018</p>
             <div className="company">
               <div
                 className="role"
