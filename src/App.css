@@ -234,6 +234,7 @@ nav li a:hover {
   cursor: pointer;
   position: relative;
   align-self: start;
+  color: white;
   font-weight: 500;
   transition: 0.3s ease;
   z-index: 2; /* Ensure the button has a z-index */
@@ -352,11 +353,18 @@ nav li a:hover {
   /* background: #614a4a; */
 }
 
+.project-card picture {
+  width: 100%; /* make the picture container full width */
+  height: 100%; /* make the picture container full height */
+  overflow: hidden; /* hide any excess image */
+}
+
 .project-card img {
   /* width: 45%; */
   width: 100%;
-  height: 250px;
-  object-fit: fill;
+  height: 300px;
+  background-color: black;
+  object-fit: cover;
   /* padding: 10px; */
   position: relative;
   border-bottom: 2px solid #008cff;

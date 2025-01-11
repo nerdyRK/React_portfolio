@@ -6,11 +6,12 @@ import coffee from "../assets/coffee.jpg";
 import coffee1 from "../assets/coffee.webp";
 import tac from "../assets/tac.png";
 import asegroup from "../assets/asegroup.png";
+import camera from "../assets/camera.gif";
 
 function Projects() {
   let pdata = [
     {
-      img: asegroup,
+      img: camera,
       pname: "JagroopSinghDOP(React+Tailwind+AOS)",
       pdesc: "A Photography website for a Professional DOP.",
       code: "https://jagroopsinghdop.com/",
