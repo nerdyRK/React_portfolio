@@ -11,6 +11,13 @@ function Projects() {
   let pdata = [
     {
       img: asegroup,
+      pname: "JagroopSinghDOP(React+Tailwind+AOS)",
+      pdesc: "A Photography website for a Professional DOP.",
+      code: "https://jagroopsinghdop.com/",
+    },
+
+    {
+      img: asegroup,
       pname: "Asegroup(React+Tailwind+AOS+EmailJS)",
       pdesc: "A product catalog website for a malysia based company.",
       code: "https://asegroup.my/",
