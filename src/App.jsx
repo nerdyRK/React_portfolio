@@ -58,7 +58,7 @@ function App() {
               <div className="not-found">
                 <h1>404 Page Not Found</h1>
                 <p>
-                  Where are you wandering? Go back to Home mate{" "}
+                  Where are you wandering? Go back to Home page{" "}
                   <span style={{ color: "red" }}>!!</span>
                   <br /> 👇
                 </p>
