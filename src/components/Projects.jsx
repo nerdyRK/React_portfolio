@@ -29,13 +29,13 @@ function Projects() {
       pdesc: "Chats fetched from the API. Added Dark/light Theme.",
       code: "https://rk-telegram.netlify.app//",
     },
-    {
-      img: tac,
-      pname: "Trust and Care",
-      pdesc:
-        "A real company website that i developed using React and Tailwind.",
-      code: "https://trustandcare.co.in/",
-    },
+    // {
+    //   img: tac,
+    //   pname: "Trust and Care",
+    //   pdesc:
+    //     "A real company website that i developed using React and Tailwind.",
+    //   code: "https://trustandcare.co.in/",
+    // },
     {
       img: wp1 || wp,
       pname: "WhatsApp Clone Using React",
