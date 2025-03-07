@@ -14,7 +14,7 @@ import { TbBrandCpp } from "react-icons/tb";
 function Resume() {
   return (
     <div className="main-area resume">
-      <div className="skills">
+      {/* <div className="skills">
         <h2 className="heading">MY SKILLS</h2>
         <div className="skill-icons">
           <SkillIcon icon={<DiHtml5 />} name="HTML5" color="#E34C26" />
@@ -33,13 +33,13 @@ function Resume() {
           <SkillIcon icon={<FaPython />} name="Python" color="#3776AB" />
           <SkillIcon icon={<TbBrandCpp />} name="C++" color="#00599C" />
         </div>
-      </div>
+      </div> */}
       <div style={{ padding: "5%" }}>
         <div className="heading">RESUME</div>
         <h2>Working Experience</h2>
         <div className="works">
           <section className="first">
-            <p className="timing">Jan 2024-jul 2024</p>
+            <p className="timing">2018-2025</p>
             <div className="company">
               <div
                 className="role"
@@ -49,21 +49,22 @@ function Resume() {
                   fontWeight: "bold",
                 }}
               >
-                Software Developer Engineer Intern
+                Sr. Graphics Designer
               </div>
-              <p className="comp">ApixLabs, Pune</p>
+              <p className="comp"> Shankar Labels, LDH</p>
               <p
                 className="para"
                 style={{ marginTop: "0px", fontSize: "0.8rem" }}
               >
-                Learned in depth about Frontend development using ReactJS and
-                Tailwind.Developed robust APIs and web applications. Learned to
-                work in a competitive and fast paced environment.
+                Gained in-depth expertise in graphic design, mastering visual
+                storytelling, branding, and UI/UX principles. Led the creation
+                of compelling digital assets and design systems while thriving
+                in a fast-paced, competitive environment.
               </p>
             </div>
           </section>
-          <section className="first">
-            <p className="timing">Jul 2023-Aug 2023</p>
+          {/* <section className="first">
+            <p className="timing">2018-2025</p>
             <div className="company">
               <div
                 className="role"
@@ -86,7 +87,7 @@ function Resume() {
                 voluptas officiis debitis corrupti excepturi fugit!
               </p>
             </div>
-          </section>
+          </section> */}
         </div>
         <div className="education">
           <h2>Education Qualifications</h2>
@@ -128,7 +129,7 @@ function Resume() {
               >
                 Bachelor of Computer Application
               </div>
-              <p className="comp">Pyramid College,Phagwara</p>
+              <p className="comp">GGN Khalsa College I Ludhiana, IN</p>
               <p
                 className="para"
                 style={{ marginTop: "0px", fontSize: "0.8rem" }}
@@ -140,7 +141,7 @@ function Resume() {
               </p>
             </div>
           </section>
-          <section className="first">
+          {/* <section className="first">
             <p className="timing">2018</p>
             <div className="company">
               <div
@@ -164,7 +165,7 @@ function Resume() {
                 voluptas officiis debitis corrupti excepturi fugit!
               </p>
             </div>
-          </section>
+          </section> */}
         </div>
       </div>
     </div>

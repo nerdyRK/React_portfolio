@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import img from "../assets/rk3.jpg";
+import jindal from "../assets/jindal.jpg";
 import img1 from "../assets/rk3.webp";
 import { useState, useEffect, useRef } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -74,7 +75,7 @@ function Sidebar() {
         )}
       </button>
       <div className="side-img">
-        <img src={img1 || img} style={{ border: "5px solid grey" }} alt="" />
+        <img src={jindal || img} style={{ border: "5px solid grey" }} alt="" />
       </div>
       <nav>
         <ul className="side-links">
@@ -86,14 +87,14 @@ function Sidebar() {
               HOME
             </NavLink>
           </li>
-          <li>
+          {/* <li>
             <NavLink
               to="/about"
               style={({ isActive }) => (isActive ? activeLinkStyles : {})}
             >
               ABOUT
-            </NavLink>
-          </li>
+            </NavLink>d
+          </li> */}
           <li>
             <NavLink
               to="/resume"
@@ -107,7 +108,7 @@ function Sidebar() {
               to="/projects"
               style={({ isActive }) => (isActive ? activeLinkStyles : {})}
             >
-              PROJECTS
+              DESIGNS
             </NavLink>
           </li>
           <li>
@@ -120,7 +121,7 @@ function Sidebar() {
           </li>
         </ul>
       </nav>
-      <div className="desc">&copy; 2024 RK studio</div>
+      <div className="desc">&copy; 2025 AJ studio</div>
     </div>
   );
 }

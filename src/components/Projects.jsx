@@ -1,102 +1,91 @@
-import wp from "../assets/wp.jpg";
-import wp1 from "../assets/wp.webp";
-import weather from "../assets/weather.png";
-import weather1 from "../assets/weather.webp";
-import coffee from "../assets/coffee.jpg";
-import coffee1 from "../assets/coffee.webp";
-import tac from "../assets/tac.png";
-import asegroup from "../assets/asegroup.png";
-import camera from "../assets/camera.gif";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import "./Gallery.css";
 
-function Projects() {
-  let pdata = [
-    {
-      img: camera,
-      pname: "JagroopSinghDOP(React+Tailwind+AOS)",
-      pdesc: "A Photography website for a Professional DOP.",
-      code: "https://jagroopsinghdop.com/",
-    },
+import img1 from "../imgs/img1.jpg";
+import img2 from "../imgs/img2.jpg";
+import img3 from "../imgs/img3.jpg";
+import img4 from "../imgs/img4.jpg";
+import img5 from "../imgs/img5.jpg";
+import img6 from "../imgs/img6.jpg";
+import img7 from "../imgs/img7.jpg";
+import img8 from "../imgs/img8.jpg";
+import img9 from "../imgs/img9.jpg";
+import img10 from "../imgs/img10.jpg";
+import img11 from "../imgs/img11.jpg";
+import img12 from "../imgs/img12.jpg";
+import img13 from "../imgs/img13.jpg";
+import img14 from "../imgs/img14.jpg";
+import img15 from "../imgs/img15.jpg";
+import img16 from "../imgs/img16.jpg";
+import img17 from "../imgs/img17.jpg";
+import img18 from "../imgs/img18.jpg";
+import img19 from "../imgs/img19.jpg";
+import img20 from "../imgs/img20.jpg";
+import img21 from "../imgs/img21.jpg";
+import img22 from "../imgs/img22.jpg";
+import img23 from "../imgs/img23.jpg";
+import img24 from "../imgs/img24.jpg";
+import img25 from "../imgs/img25.jpg";
+import img26 from "../imgs/img26.jpg";
+import img27 from "../imgs/img27.jpg";
 
-    {
-      img: asegroup,
-      pname: "Asegroup(React+Tailwind+AOS+EmailJS)",
-      pdesc: "A product catalog website for a malysia based company.",
-      code: "https://asegroup.my/",
-    },
-    {
-      img: "https://www.91-cdn.com/hub/wp-content/uploads/2023/11/How-to-login-and-use-Telegram-web-on-Windows-and-Mac.png",
-      pname: "Resposnive Telegram UI Replica (React+Tailwind)",
-      pdesc: "Chats fetched from the API. Added Dark/light Theme.",
-      code: "https://rk-telegram.netlify.app//",
-    },
-    // {
-    //   img: tac,
-    //   pname: "Trust and Care",
-    //   pdesc:
-    //     "A real company website that i developed using React and Tailwind.",
-    //   code: "https://trustandcare.co.in/",
-    // },
-    {
-      img: wp1 || wp,
-      pname: "WhatsApp Clone Using React",
-      pdesc: "It has the functionality of individual chats also.",
-      code: "https://rk-wp-clone.netlify.app/",
-    },
-    {
-      img: weather1 || weather,
-      pname: "Weather App using Vanilla JS",
-      pdesc: "It uses the Live data of weather API",
-      code: "https://nerdyrk.github.io/weatherApp/",
-    },
-    {
-      img: coffee1 || coffee,
-      pname: "Coffee Shop Website Design",
-      pdesc: "This Site is designed for a fictional Coffee shop.",
-      code: "https://nerdyrk.github.io/coffee/",
-    },
-  ];
+const Projects = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 300,
+      once: false,
+    });
+  }, []);
+
   return (
-    <div className="projects main-area">
-      <h2 className="heading">Projects</h2>
-      <div className="project-list">
-        {pdata.map((item, i) => {
-          return (
-            <Project
-              key={i}
-              img={item.img}
-              pname={item.pname}
-              pdesc={item.pdesc}
-              code={item.code}
-            />
-          );
-        })}
+    <div className="main-area gallery-container">
+      <h1 className="gallery-title" data-aos="fade-down">
+        Some of my works
+      </h1>
+      <div className="gallery-grid">
+        {[
+          img1,
+          img2,
+          img3,
+          img4,
+          img5,
+          img6,
+          img7,
+          img8,
+          img9,
+          img10,
+          img11,
+          img12,
+          img13,
+          img14,
+          img15,
+          img16,
+          img17,
+          img18,
+          img19,
+          img20,
+          img21,
+          img22,
+          img23,
+          img24,
+          img25,
+          img26,
+          img27,
+        ].map((img, i) => (
+          <div
+            key={i + 1}
+            className="gallery-item"
+            data-aos={i % 2 === 0 ? "fade-right" : "fade-left"}
+            // data-aos-delay={(i + 1) * 100}
+          >
+            <img src={img} alt={`Project ${i + 1}`} loading="lazy" />
+          </div>
+        ))}
       </div>
     </div>
   );
-}
-
-function Project({ img, pname, pdesc, code }) {
-  return (
-    <div className="project-card">
-      <picture>
-        <source srcSet={img} type="image/webp" />
-        <source srcSet={img} type="image/jpeg" />
-        <img src={img} alt="project image" />
-      </picture>
-
-      <a href={code} target="_blank" className="pname">
-        {pname}
-      </a>
-
-      <div
-        className="pdesc para"
-        title={pdesc}
-        style={{ marginTop: "4px", cursor: "pointer" }}
-      >
-        {pdesc}
-      </div>
-    </div>
-  );
-}
+};
 
 export default Projects;

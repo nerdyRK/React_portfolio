@@ -32,7 +32,7 @@ nav {
   width: 100%;
   justify-content: center;
   height: 60%;
-  background: url("../src/assets/logo.jpg");
+  /* background: url("../src/assets/logo.jpg"); */
   background-position: top;
   background-color: #212639;
   /* Red color with 50% opacity */

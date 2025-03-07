@@ -133,17 +133,17 @@ function Contact() {
           <ContactCard
             icon={<IoCallOutline />}
             name="Phone"
-            items={["+91 78229-43926", "+91 84277-33093"]}
+            items={["+91 98141-41056"]}
           />
           <ContactCard
             icon={<MdOutlineEmail />}
             name="Email"
-            items={["rkmall321@gmail.com"]}
+            items={["jindalabhi2000@gmail.com"]}
           />
           <ContactCard
             icon={<IoLocationOutline />}
             name="Address"
-            items={["Phagwara,Punjab,IN"]}
+            items={["Ludhiana,Punjab,IN"]}
           />
         </div>
       </div>

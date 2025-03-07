@@ -10,26 +10,26 @@ function Home() {
       <h1>
         Hi, Its{" "}
         <span style={{ color: "#037fff", fontFamily: "Kaushan script" }}>
-          Ravi
+          Abhinav
         </span>
         &nbsp;here
       </h1>
       <div className="type-effect">
-        <p> I am a</p>
+        <p> I am a Professional</p>
         <Typewriter
           options={{
-            strings: ["Frontend Dev.", "MERN Stack Dev."],
+            strings: [" Graphic Designer."],
             autoStart: true,
             loop: true,
           }}
         />
       </div>
       <p className="para">
-        Skilled in writing clean, efficient code and creating pixel-perfect
-        designs. I enhance websites with engaging and interactive elements,
-        including smooth transitions and animations.
+        Skilled in creating visually stunning and pixel-perfect designs. I craft
+        engaging user experiences with interactive elements, smooth transitions,
+        and eye-catching animations.
       </p>
-      <div className="social-icons">
+      {/* <div className="social-icons">
         <a href="https://github.com/nerdyRK" title="Github" target="_blank">
           <TiSocialGithubCircular />
         </a>
@@ -43,7 +43,7 @@ function Home() {
         <a href="" title="Nothing">
           <CiFacebook />
         </a>
-      </div>
+      </div> */}
     </div>
   );
 }
