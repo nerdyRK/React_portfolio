@@ -737,3 +737,22 @@ textarea {
     left: 8vw;
   }
 }
+
+.ubtn {
+  background: linear-gradient(90deg, #004d9a 0%, #008cff 100%);
+  background-size: 200% 100%;
+  background-position: 0% 100%;
+  transition: all 0.3s ease-in-out;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: large;
+  text-decoration: none;
+  color: aliceblue;
+  display: block;
+  margin-top: 10px;
+}
+
+.ubtn:hover {
+  background-position: 100% 100%;
+  box-shadow: 0 0 10px #1394ff;
+}
