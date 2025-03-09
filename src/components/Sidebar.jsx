@@ -120,7 +120,7 @@ function Sidebar() {
           </li>
         </ul>
       </nav>
-      <div className="desc">&copy; 2024 RK studio</div>
+      <div className="desc">&copy; {new Date().getFullYear()} RK studio</div>
     </div>
   );
 }
