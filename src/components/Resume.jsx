@@ -39,7 +39,42 @@ function Resume() {
         <h2>Working Experience</h2>
         <div className="works">
           <section className="first">
-            <p className="timing">Jan 2024-jul 2024</p>
+            <p className="timing">
+              Nov 2024 - Present ({" "}
+              {`${
+                Math.abs(
+                  new Date().getMonth() - new Date("2024-11-01").getMonth()
+                ) + 1
+              } months`}
+              )
+            </p>
+
+            <div className="company">
+              <div
+                className="role"
+                style={{
+                  color: "#037fff",
+                  fontSize: "1.2rem",
+                  fontWeight: "bold",
+                }}
+              >
+                Assistant Software Developer
+              </div>
+              <p className="comp">Lovely Professional University</p>
+              <p
+                className="para"
+                style={{ marginTop: "0px", fontSize: "0.8rem" }}
+              >
+                Shifted from React to next.js. Learned in depth about Next.js
+                and its features. Developed a robust Internal ERP system's
+                Frontned using Next.js. Worked closely with backend developers
+                to ensure seamless integration of the frontend and backend
+                systems.
+              </p>
+            </div>
+          </section>
+          <section className="first">
+            <p className="timing">Jan 2024 - Jul 2024 (6 months)</p>
             <div className="company">
               <div
                 className="role"
@@ -59,31 +94,6 @@ function Resume() {
                 Learned in depth about Frontend development using ReactJS and
                 Tailwind.Developed robust APIs and web applications. Learned to
                 work in a competitive and fast paced environment.
-              </p>
-            </div>
-          </section>
-          <section className="first">
-            <p className="timing">Jul 2023-Aug 2023</p>
-            <div className="company">
-              <div
-                className="role"
-                style={{
-                  color: "#037fff",
-                  fontSize: "1.2rem",
-                  fontWeight: "bold",
-                }}
-              >
-                FrontEnd Developer, Intern
-              </div>
-              <p className="comp">CodeClause Pvt. Ltd.</p>
-              <p
-                className="para"
-                style={{ marginTop: "0px", fontSize: "0.8rem" }}
-              >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Consequuntur, error numquam ullam aperiam maxime aut, velit esse
-                enim amet necessitatibus, delectus laudantium nemo nulla
-                voluptas officiis debitis corrupti excepturi fugit!
               </p>
             </div>
           </section>
