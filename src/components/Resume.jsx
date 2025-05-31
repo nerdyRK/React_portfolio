@@ -65,11 +65,10 @@ function Resume() {
                 className="para"
                 style={{ marginTop: "0px", fontSize: "0.8rem" }}
               >
-                Shifted from React to next.js. Learned in depth about Next.js
-                and its features. Developed a robust Internal ERP system's
-                Frontned using Next.js. Worked closely with backend developers
-                to ensure seamless integration of the frontend and backend
-                systems.
+                Learned in depth about Next.js and its features. Developed a
+                robust Internal ERP system's Frontned using Next.js. Worked
+                closely with backend developers to ensure seamless integration
+                of the frontend and backend systems.
               </p>
             </div>
           </section>
@@ -118,10 +117,10 @@ function Resume() {
                 className="para"
                 style={{ marginTop: "0px", fontSize: "0.8rem" }}
               >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Consequuntur, error numquam ullam aperiam maxime aut, velit esse
-                enim amet necessitatibus, delectus laudantium nemo nulla
-                voluptas officiis debitis corrupti excepturi fugit!
+                Got to meet passionate programming students from across India.
+                Explored various technologies and IT domains, including data
+                science tools and app development using Java, Networking
+                concepts and so on.
               </p>
             </div>
           </section>
@@ -143,10 +142,9 @@ function Resume() {
                 className="para"
                 style={{ marginTop: "0px", fontSize: "0.8rem" }}
               >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Consequuntur, error numquam ullam aperiam maxime aut, velit esse
-                enim amet necessitatibus, delectus laudantium nemo nulla
-                voluptas officiis debitis corrupti excepturi fugit!
+                Joined for reasons other than IT but got hooked when I dabbled
+                in programming and discovered the endless possibilities. It was
+                a turning point for me.
               </p>
             </div>
           </section>
@@ -168,10 +166,11 @@ function Resume() {
                 className="para"
                 style={{ marginTop: "0px", fontSize: "0.8rem" }}
               >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Consequuntur, error numquam ullam aperiam maxime aut, velit esse
-                enim amet necessitatibus, delectus laudantium nemo nulla
-                voluptas officiis debitis corrupti excepturi fugit!
+                I got into this prestigious government-run institution, which
+                admits students who performed exceptionally well in their
+                matriculation exams. This institute taught me hard work, with
+                regular studies followed by coaching for NIT and IIT entrance
+                exams. .
               </p>
             </div>
           </section>

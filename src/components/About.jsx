@@ -47,7 +47,7 @@ function About() {
                 <span>Full Name </span>: Ravi Kumar
               </li>
               <li>
-                <span>Age </span>: 23
+                <span>Age </span>: {new Date().getFullYear() - 2000}
               </li>
               <li>
                 <span>Nationality </span>: Indian
@@ -56,12 +56,12 @@ function About() {
                 <span>Languages </span>: English, Hindi, Punjabi
               </li>
               <li>
-                <span>Address </span>: Viman Nagar, Pune, IN
+                <span>Address </span>: Phagwara, Punjab, IN
               </li>
             </ul>
             <button className="cv-btn">
-              <a href={pdf} download>
-                DOWNLOAD CV
+              <a href={pdf} target="_blank" rel="noopener noreferrer">
+                VIEW CV
               </a>
             </button>
           </div>

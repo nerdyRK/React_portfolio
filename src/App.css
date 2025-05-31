@@ -141,6 +141,7 @@ nav li a:hover {
   font-size: 1.2rem;
   color: #a7a9b2;
   margin: 1rem 0;
+  text-align: justify;
 }
 
 .main-area .social-icons {
@@ -208,7 +209,7 @@ nav li a:hover {
 .heading {
   text-align: center;
   font-size: clamp(24px, 2.2rem, 50px);
-  filter: drop-shadow(13px 30px 1px #5a5a6157);
+  filter: drop-shadow(13px 10px 1px #5a5a6157);
 }
 
 .img-bio li {
@@ -275,7 +276,6 @@ nav li a:hover {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
   padding: 10% 0;
   gap: 5%;
@@ -400,6 +400,7 @@ nav li a:hover {
 
 .project-card .para {
   padding: 0 8px;
+  font-size: 15px;
   /* white-space: nowrap; */
   /* Prevents the text from wrapping to the next line */
   overflow: hidden;
