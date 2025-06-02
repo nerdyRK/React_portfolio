@@ -12,6 +12,26 @@ import { FaPython } from "react-icons/fa";
 import { TbBrandCpp } from "react-icons/tb";
 
 function Resume() {
+  function getExperience(startDate) {
+    const start = new Date(startDate);
+    const now = new Date();
+
+    let years = now.getFullYear() - start.getFullYear();
+    let months = now.getMonth() - start.getMonth();
+
+    if (months < 0) {
+      years--;
+      months += 12;
+    }
+
+    if (years === 0) {
+      return `${months} month${months !== 1 ? "s" : ""}`;
+    }
+
+    return `${years} year${years > 1 ? "s" : ""} ${months} month${
+      months !== 1 ? "s" : ""
+    }`;
+  }
   return (
     <div className="main-area resume">
       <div className="skills">
@@ -40,13 +60,7 @@ function Resume() {
         <div className="works">
           <section className="first">
             <p className="timing">
-              Nov 2024 - Present ({" "}
-              {`${
-                Math.abs(
-                  new Date().getMonth() - new Date("2024-11-01").getMonth()
-                ) + 1
-              } months`}
-              )
+              Nov 2024 - Present ({getExperience("Nov 2024")})
             </p>
 
             <div className="company">
